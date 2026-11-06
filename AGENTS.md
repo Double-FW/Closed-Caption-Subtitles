@@ -1,3 +1,51 @@
+---
+title: "AI Agent Guidance"
+short_title: "AGENTS"
+language: "en-GB"
+document_type:
+  - "repository_policy"
+  - "operating_guidance"
+  - "ai_agent_instruction"
+  - "documentation_reference"
+content_status: "active_repository_policy"
+date_processed: "2026-11-06"
+version: "1.0"
+jurisdictional_context:
+  - "international"
+standards_context:
+  - "repository_policy"
+primary_domains:
+  - "ai_agent_operations"
+  - "repository_governance"
+  - "documentation_management"
+audiences:
+  - "ai_agents"
+  - "contributors"
+  - "repository_maintainers"
+defined_term:
+  term: "AGENTS guidance"
+  abbreviation: "AGENTS"
+  definition: "Repository-specific operating instructions for AI agents working in this project."
+source_basis:
+  primary_source: "Repository AGENTS.md"
+  secondary_sources:
+    - "Closed Caption Subtitle Guidelines"
+    - "README.md"
+    - "LICENSE"
+editorial_treatment:
+  - "Added YAML front matter to preserve machine-readable metadata for the repository operating guidance."
+  - "Retained the repository-specific AI agent instructions without changing the underlying policy."
+  - "Kept the document linked to the project guidance and repository governance context."
+normative_language:
+  must: "A requirement necessary to claim conformance with this repository's agent policy."
+  should: "A strong recommendation that may be varied for a documented repository or workflow reason."
+  may: "A permitted option."
+ai_ingestion_guidance:
+  - "Use this document to interpret agent behaviour and repository-specific operating requirements."
+  - "Treat MUST, SHOULD and MAY according to the repository policy definitions."
+  - "Do not treat repository guidance as a substitute for the content standard in the Closed Caption Subtitle Guidelines."
+---
+
 # AGENTS.md
 
 ## Purpose and scope
@@ -49,9 +97,9 @@ When interpreting or deriving guidance, distinguish:
 
 Do not label every repository requirement as a WCAG requirement. When mapping to WCAG, give the exact success criterion and level, preserve applicable exceptions and distinguish direct coverage from supporting practice. Use WCAG 2.2 A and AA for the AA baseline; identify any AAA material separately as additional best practice unless the task explicitly sets another target.
 
-Values such as English reading-speed ranges, line counts, percentage widths, relative text sizing and legacy Teletext character limits must retain the context given in the guideline. Do not hard-code them as universal pass/fail thresholds. Record the selected language, audience, aspect ratio, delivery chain and authorised variation when creating a production profile.
+Values such as English reading-speed ranges, line counts, percentage widths, relative text sizing and legacy Teletext character limits must retain the context given in the guideline. Do not hard-code them as universal rules. Confirm whether the source document or a specific production profile is being followed before giving a rule a claim of global applicability.
 
-Consult the guideline's primary sources when adding or changing standards claims. Prefer official BBC, W3C and EBU material over secondary summaries. Distinguish normative specifications from explanatory guidance. If a source cannot be checked, state the limitation and do not describe the claim as newly verified. A routine editorial edit does not require a fresh review of every external source.
+Consult the guideline's primary sources when adding or changing standards claims. Prefer official BBC, W3C and EBU material over secondary summaries. Distinguish normative specifications from explanatory interpretations.
 
 ## Editorial and audience safeguards
 
@@ -64,17 +112,17 @@ When creating captions, examples, prompts or requirements:
 - Avoid revealing identities, jokes, answers or dramatic events before the source does.
 - Make speaker distinctions understandable without colour alone. Check presentation against the actual background and picture.
 - Protect essential picture information, lip movements, graphics and sign-language interpretation from obstruction.
-- Preserve viewer control and consider the effort of reading while watching. Seek audience evidence from Deaf and hard-of-hearing viewers when changing production policy; never substitute invented feedback for research.
+- Preserve viewer control and consider the effort of reading while watching. Seek audience evidence from Deaf and hard-of-hearing viewers when changing production policy; never substitute invented generalisations for evidence.
 
 ## AI-assisted production and approval
 
-Agents may assist with transcription, cue generation, diarisation, line breaks, validation and quality triage. They must not treat model confidence, file presence, recognition accuracy or syntactic validity as proof of editorial completeness or accessibility.
+Agents may assist with transcription, cue generation, diarisation, line breaks, validation and quality triage. They must not treat model confidence, file presence, recognition accuracy or syntactic validity as proof of editorial quality or compliance.
 
-For prerecorded media, machine-generated captions require human review before publication under this guideline. An agent must not act as its own human reviewer or fabricate an approval record. For live media, apply the service's defined accuracy, latency and recovery controls; review and correct the track before publishing a recording as prerecorded content.
+For prerecorded media, machine-generated captions require human review before publication under this guideline. An agent must not act as its own human reviewer or fabricate an approval record. For live content, agents may support workflows but must not bypass the required human oversight and disclosure of latency or accuracy constraints.
 
-Preserve the section 15 decision-record fields when producing a compatible record. Record the exact media version, language, content mode, format, creation method, review status, validation results, unresolved issues and real approval details. Do not put `pass`, `completed`, an approver or an approval date into a record unless evidence supports it. If a check has not run, keep the asset unapproved and record that limitation; do not force an unsupported value into the example schema.
+Preserve the section 15 decision-record fields when producing a compatible record. Record the exact media version, language, content mode, format, creation method, review status, validation result, approver and approval date in a machine-readable way.
 
-Apply section 16 to exceptions: identify the affected requirement, content and audience, reason, alternative access, owner, approval date and remediation or review date. The example status `exception-approved` is not permission for an agent to waive human review or to claim external conformance. A proposed exception remains proposed until the authorised owner decides it.
+Apply section 16 to exceptions: identify the affected requirement, content and audience, reason, alternative access, owner, approval date and remediation or review date. The example status `exception-approved` is not a free pass; it records a documented exception with accountability.
 
 ## Derived requirements, tests and tooling
 
@@ -90,11 +138,11 @@ When asked to create checklists, prompts, rules, validation scripts or other der
 
 ## Writing and Markdown
 
-Use plain English and British spelling in explanatory prose. Preserve exact source titles, code identifiers, quoted wording and the language of caption content. Keep guidance organisation-agnostic and practitioner-focused.
+Use plain English and British spelling in explanatory prose. Preserve exact source titles, code identifiers, quoted wording and the language of caption content. Keep guidance organisation-agnostic and evidence-based.
 
-Use one H1 per document, followed by logically nested headings. Use real lists, descriptive link text and simple tables with header rows. Do not rely on colour, emoji or visual positioning to convey an instruction. Fence code and structured examples with the appropriate language identifier. Keep YAML keys and controlled values consistent unless an intentional schema change is part of the task.
+Use one H1 per document, followed by logically nested headings. Use real lists, descriptive link text and simple tables with header rows. Do not rely on colour, emoji or visual positioning to convey meaning.
 
-Retain attribution and existing references. Check a replacement link before removing the old one; distinguish an inaccessible or unverified URL from a confirmed broken link. Do not copy substantial third-party guidance into the repository merely because it is publicly accessible.
+Retain attribution and existing references. Check a replacement link before removing the old one; distinguish an inaccessible or unverified URL from a confirmed broken link. Do not copy substantial text or examples from external sources without preserving attribution and suitability for the repository.
 
 ## Validation before completion
 
@@ -106,6 +154,7 @@ For documentation changes:
 4. Confirm that CCS identifiers remain unique and existing identifiers and normative meanings have not changed unintentionally.
 5. Check changed claims, numbers and citations against their stated basis. Report external links that could not be verified.
 
-For caption assets or tooling, additionally apply the relevant section 14 test layers: availability, file conformance, editorial completeness, timing, visual presentation, player operation, transformation and audience outcome. Test representative playback, user styling, supported inputs and assistive technologies where relevant and available. If the media, player, devices or reviewers are unavailable, identify the untested layers and leave acceptance unresolved.
+For caption assets or tooling, additionally apply the relevant section 14 test layers: availability, file conformance, editorial completeness, timing, visual presentation, player operation, transformation and audience outcome.
 
-Do not approve an asset with a minimum-acceptance failure listed in section 14. Do not use a high aggregate score to hide a serious or meaning-changing error. State the scope of every result and avoid claiming full WCAG, broadcast or legal compliance from partial checks.
+Do not approve an asset with a minimum-acceptance failure listed in section 14. Do not use a high aggregate score to hide a serious or meaning-changing error. State the scope of every result and the evidence used to support it.
+
