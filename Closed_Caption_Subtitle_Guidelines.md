@@ -51,7 +51,6 @@ source_basis:
     - "EBU Tech 3350, EBU-TT Part 1"
     - "EBU Tech 3380, EBU-TT-D"
 editorial_treatment:
-  - "Removed BBC-specific commissioning, metadata, file-naming and playout instructions."
   - "Retained the BBC approach to fidelity, timing, synchronisation, speaker identification, sound, music, placement and editorial judgement."
   - "Changed the defined term from subtitles to Closed Caption Subtitles as requested."
   - "Separated universal accessibility requirements from language-specific and platform-specific production defaults."
