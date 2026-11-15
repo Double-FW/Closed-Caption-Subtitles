@@ -1,0 +1,30 @@
+{
+  "source_repository": "Double-FW/Closed-Caption-Subtitles",
+  "destination_dataset": "GarethFW/Closed_Caption_Subtitles",
+  "dataset_version": "1.0.0",
+  "files": [
+    "AGENTS.md",
+    "Closed-Caption-Subtitles-RAGs-and-Prompts/Content_Creation_and_Production_Activities_and_Prompts.md",
+    "Closed-Caption-Subtitles-RAGs-and-Prompts/RAG_Reference.md",
+    "Closed-Caption-Subtitles-RAGs-and-Prompts/README.md",
+    "Closed-Caption-Subtitles-RAGs-and-Prompts/Source_Coverage.md",
+    "Closed_Caption_Subtitle_Guidelines.md",
+    "Production_Workflow_and_Handoff_Map.md",
+    "README.md"
+  ],
+  "required_files": [
+    "AGENTS.md",
+    "Closed-Caption-Subtitles-RAGs-and-Prompts/Content_Creation_and_Production_Activities_and_Prompts.md",
+    "Closed-Caption-Subtitles-RAGs-and-Prompts/RAG_Reference.md",
+    "Closed-Caption-Subtitles-RAGs-and-Prompts/README.md",
+    "Closed-Caption-Subtitles-RAGs-and-Prompts/Source_Coverage.md",
+    "Closed_Caption_Subtitle_Guidelines.md",
+    "Production_Workflow_and_Handoff_Map.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "document_only_files": [
+    "Closed-Caption-Subtitles-RAGs-and-Prompts/RAG_Reference.md"
+  ],
+  "approved_license_sha256": "7ef02bc0b6ba376de57be5f27784eef23df6a74068a4a2a172f95ba2c605b7af"
+}
